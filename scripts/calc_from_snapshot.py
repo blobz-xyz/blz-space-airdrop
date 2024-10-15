@@ -3,15 +3,22 @@ from web3.utils.address import to_checksum_address
 from pprint import pprint as pp
 
 CSV_LIST = [
-    [ '../csv/Space BLOBz Tier S.csv', 's', 10_000 ],
-    [ '../csv/Space BLOBz Tier A.csv', 'a', 1_000 ],
-    [ '../csv/Space BLOBz Tier B.csv', 'b', 100 ],
-    [ '../csv/Space BLOBz Tier C.csv', 'c', 10 ],
+    #[ '../csv/Space BLOBz Tier S.csv', 's', 10_000 ],
+    #[ '../csv/Space BLOBz Tier A.csv', 'a', 1_000 ],
+    #[ '../csv/Space BLOBz Tier B.csv', 'b', 100 ],
+    #[ '../csv/Space BLOBz Tier C.csv', 'c', 10 ],
+
+    # 20241012
+    [ '../csv/20241012/Space BLOBz Tier S.csv', 's', 10_000 ],
+    [ '../csv/20241012/Space BLOBz Tier A.csv', 'a', 1_000 ],
+    [ '../csv/20241012/Space BLOBz Tier B.csv', 'b', 100 ],
+    [ '../csv/20241012/Space BLOBz Tier C.csv', 'c', 10 ],
 ]
 SKIP_ADDRS = [
     '0x0000000000000000000000000000000000000000',
 ]
-SUPPLY = 17_692_841 #17,692,841.533338594688095218
+#SUPPLY = 17_692_841 #17,692,841.533338594688095218
+SUPPLY = 11_004_424 # 20241012
 
 chunk = {}
 

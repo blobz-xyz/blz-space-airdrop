@@ -20,6 +20,7 @@ CSV_LIST = [
     [ '../csv/20241028/Space BLOBz Tier B.csv', 'b', 100 ],
     [ '../csv/20241028/Space BLOBz Tier C.csv', 'c', 10 ],
 ]
+PARTNER_PATH = '../csv/partner.csv'
 SKIP_ADDRS = [
     '0x0000000000000000000000000000000000000000',
 ]
@@ -56,6 +57,20 @@ for (csv_path, tier, rate) in CSV_LIST:
 
     # recheck tier supply
     print(tier, csv_path, tier_qty)
+
+# add partner wallets
+with open(PARTNER_PATH, 'r') as file:
+    for line in file:
+        (_, tier, rate) = CSV_LIST[0] # Tier S
+        addr = line.strip().lower()
+        qty = 1
+
+        wallet = chunk.get(addr) or {}
+        tier_qty = wallet.get('tier') or 0
+        points = wallet.get('points') or 0
+        wallet[tier] = tier_qty + qty
+        wallet['points'] = points + (qty * rate)
+        chunk[addr] = wallet
 
 # sum points
 sum_points = 0

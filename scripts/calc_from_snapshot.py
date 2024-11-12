@@ -15,10 +15,16 @@ CSV_LIST = [
     #[ '../csv/20241012/Space BLOBz Tier C.csv', 'c', 10 ],
 
     # 20241028
-    [ '../csv/20241028/Space BLOBz Tier S.csv', 's', 10_000 ],
-    [ '../csv/20241028/Space BLOBz Tier A.csv', 'a', 1_000 ],
-    [ '../csv/20241028/Space BLOBz Tier B.csv', 'b', 100 ],
-    [ '../csv/20241028/Space BLOBz Tier C.csv', 'c', 10 ],
+    #[ '../csv/20241028/Space BLOBz Tier S.csv', 's', 10_000 ],
+    #[ '../csv/20241028/Space BLOBz Tier A.csv', 'a', 1_000 ],
+    #[ '../csv/20241028/Space BLOBz Tier B.csv', 'b', 100 ],
+    #[ '../csv/20241028/Space BLOBz Tier C.csv', 'c', 10 ],
+
+    # 20241112
+    [ '../csv/20241112/Space BLOBz Tier S.csv', 's', 10_000 ],
+    [ '../csv/20241112/Space BLOBz Tier A.csv', 'a', 1_000 ],
+    [ '../csv/20241112/Space BLOBz Tier B.csv', 'b', 100 ],
+    [ '../csv/20241112/Space BLOBz Tier C.csv', 'c', 10 ],
 ]
 PARTNER_PATH = '../csv/partner.csv'
 SKIP_ADDRS = [

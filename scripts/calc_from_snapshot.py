@@ -32,7 +32,8 @@ SKIP_ADDRS = [
 ]
 #SUPPLY = 17_692_841 #17,692,841.533338594688095218
 #SUPPLY = 11_004_424 # 20241012
-SUPPLY = 6_900_753 # 20241028
+#SUPPLY = 6_900_753 # 20241028
+SUPPLY = 4_917_045 # 20241112
 
 chunk = {}
 
@@ -72,7 +73,7 @@ with open(PARTNER_PATH, 'r') as file:
         qty = 1
 
         wallet = chunk.get(addr) or {}
-        tier_qty = wallet.get('tier') or 0
+        tier_qty = wallet.get(tier) or 0
         points = wallet.get('points') or 0
         wallet[tier] = tier_qty + qty
         wallet['points'] = points + (qty * rate)

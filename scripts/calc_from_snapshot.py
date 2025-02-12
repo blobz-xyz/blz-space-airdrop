@@ -45,10 +45,16 @@ CSV_LIST = [
     #[ '../csv/20241228/Space BLOBz Tier C.csv', 'c', 10 ],
 
     # 20250112
-    [ '../csv/20250112/Space BLOBz Tier S.csv', 's', 10_000 ],
-    [ '../csv/20250112/Space BLOBz Tier A.csv', 'a', 1_000 ],
-    [ '../csv/20250112/Space BLOBz Tier B.csv', 'b', 100 ],
-    [ '../csv/20250112/Space BLOBz Tier C.csv', 'c', 10 ],
+    #[ '../csv/20250112/Space BLOBz Tier S.csv', 's', 10_000 ],
+    #[ '../csv/20250112/Space BLOBz Tier A.csv', 'a', 1_000 ],
+    #[ '../csv/20250112/Space BLOBz Tier B.csv', 'b', 100 ],
+    #[ '../csv/20250112/Space BLOBz Tier C.csv', 'c', 10 ],
+
+    # 20250212
+    [ '../csv/20250212/Space BLOBz Tier S.csv', 's', 10_000 ],
+    [ '../csv/20250212/Space BLOBz Tier A.csv', 'a', 1_000 ],
+    [ '../csv/20250212/Space BLOBz Tier B.csv', 'b', 100 ],
+    [ '../csv/20250212/Space BLOBz Tier C.csv', 'c', 10 ],
 ]
 PARTNER_PATH = '../csv/partner.csv'
 SKIP_ADDRS = [
@@ -61,7 +67,8 @@ SKIP_ADDRS = [
 #SUPPLY = 3_471_355 # 20241128
 #SUPPLY = 2_265_781 # 20241212
 #SUPPLY = 2_265_781 # 20241228
-SUPPLY = 1_966_566 # 20250112
+#SUPPLY = 1_966_566 # 20250112
+SUPPLY = 1_966_566 # 20250212
 
 chunk = {}
 
